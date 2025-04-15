@@ -17,16 +17,11 @@ terraform {
       version = "0.100.0"
     }
   }
-  backend "s3" {
-    bucket = "projetotf"
-    key    = "dev/terraform.tfstate"
-    region = "us-east-1"
-  }
 
 }
 
 provider "aws" {
-  region = "us-east-1"
+  region = var.region
 }
 provider "kubernetes" {
   host                   = module.eks_cluster.certificate_endpoint
