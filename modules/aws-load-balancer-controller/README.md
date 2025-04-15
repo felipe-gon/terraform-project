@@ -1,22 +1,5 @@
 <!-- BEGIN_TF_DOCS -->
 
-#  Projeto de Infraestrutura com Terraform na AWS
-
-Este projeto provisiona uma infraestrutura completa na AWS com foco em clusters EKS utilizando Terraform. Tudo organizado em módulos reutilizáveis para facilitar o versionamento e a escalabilidade.
-
-## Tecnologias & Recursos
-
-- AWS EKS (Elastic Kubernetes Service)
-- VPC com subnets públicas e privadas
-- Bastion Host
-- NAT Gateway & Internet Gateway
-- IAM Roles + OIDC
-- Helm Charts automatizados (Load Balancer Controller)
-- Service Account configurada com permissões
-- Pre-commit hooks:
-    - Formatação (`terraform fmt`)
-    - Geração de documentação (`terraform-docs`)
-
 ## Requirements
 
 No requirements.
